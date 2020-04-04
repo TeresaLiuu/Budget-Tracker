@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(express.static(`public`));
 
-mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/budget`, {
+mongoose.connect(process.env.MONGODB_URI || `mongodb://<dbuser>:<dbpassword>@ds023064.mlab.com:23064/heroku_p1hs4wgd`, {
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
